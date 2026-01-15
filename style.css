@@ -246,3 +246,12 @@ h1, h3 {
     flex: 0 0 auto; /* do not shrink, maintain width */
     min-width: 140px;
 }
+
+
+.card h4 {
+    font-size: 16px;
+    white-space: normal;   /* allow wrapping */
+    word-wrap: break-word; /* break long words if needed */
+    overflow-wrap: break-word;
+    text-align: center;
+}
