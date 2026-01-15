@@ -1,9 +1,9 @@
-body {
+/* body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
-}
+} */
 
 .dashboard {
     max-width: 1000px;
@@ -64,12 +64,12 @@ button {
 
 
 /* ================== GLOBAL ================== */
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 
 body {
      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
