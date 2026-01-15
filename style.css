@@ -61,3 +61,149 @@ button {
 .card:hover {
     transform: scale(1.05);
 }
+
+
+/* ================== GLOBAL ================== */
+
+
+
+/* ================== HEADER ================== */
+h1, h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* ================== SEARCH ================== */
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#cityInput {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+    max-width: 90vw;
+    font-size: 16px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #ff7e5f;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#searchBtn:hover {
+    background: #feb47b;
+}
+
+/* ================== WEATHER SECTION ================== */
+#weatherContainer {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#weatherContainer img {
+    width: 100px;
+    height: 100px;
+}
+
+/* ================== CARDS ================== */
+#famousCities, #history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px 20px;
+    min-width: 120px;
+    max-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================== CHART ================== */
+#tempChart {
+    width: 100% !important;
+    max-width: 700px;
+    height: 300px !important;
+    margin-bottom: 30px;
+}
+
+/* ================== RESPONSIVE MEDIA QUERIES ================== */
+@media (max-width: 768px) {
+    #weatherContainer {
+        padding: 15px;
+    }
+
+    #cityInput {
+        width: 200px;
+    }
+
+    .card {
+        min-width: 100px;
+        max-width: 120px;
+        padding: 10px;
+    }
+
+    #tempChart {
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #searchContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #cityInput {
+        width: 90%;
+    }
+
+    #searchBtn {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .card {
+        min-width: 80px;
+        max-width: 100px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #tempChart {
+        height: 200px !important;
+    }
+}
