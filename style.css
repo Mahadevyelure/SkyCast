@@ -225,3 +225,24 @@ h1, h3 {
         height: 200px !important;
     }
 }
+
+
+/* Horizontal scroll for famous cities */
+#famousCities {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Webkit browsers */
+#famousCities::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cards inside scroll container */
+#famousCities .card {
+    flex: 0 0 auto; /* do not shrink, maintain width */
+    min-width: 140px;
+}
