@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SkyCast Pro+</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- HEADER -->
+    <header>
+        <h1>🌤 SkyCast</h1>
+        <input type="text" id="cityInput" placeholder="Search city">
+        <button onclick="getWeather()">Search</button>
+    </header>
+
+    <!-- MAIN WEATHER -->
+    <section class="hero">
+        <h2 id="location">--</h2>
+        <h1 id="temp">--°C</h1>
+        <p id="condition">--</p>
+        <img id="icon" src="" alt="weather icon">
+        <p id="insight"></p>
+    </section>
+
+    <!-- SEARCH HISTORY -->
+    <section>
+        <h3>🕒 Search History</h3>
+        <div class="history" id="history"></div>
+    </section>
+
+    <!-- FAMOUS CITIES -->
+    <section>
+        <h3>🌍 Famous Cities</h3>
+        <div class="cities" id="famousCities"></div>
+    </section>
+
+    <!-- LAST 7 DAYS -->
+    <section>
+    <h3>📈 7-Day Temperature Trend</h3>
+    <canvas id="tempChart"></canvas>
+</section>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
